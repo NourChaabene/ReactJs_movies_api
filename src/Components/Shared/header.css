@@ -1,0 +1,10 @@
+.MuiAppBar-colorPrimary {
+    background-color: #282828 !important
+}
+.MuiTypography-h6 {
+    font-family: 'Montserrat' !important;
+}
+
+img:hover {
+    cursor: pointer;
+}
