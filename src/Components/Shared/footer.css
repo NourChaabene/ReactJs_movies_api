@@ -1,0 +1,9 @@
+.footer {
+    background: rgb(31, 31, 31) !important;
+    display: flex;
+    color: rgb(251, 251, 251) !important;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+}

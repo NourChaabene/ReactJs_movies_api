@@ -16,6 +16,7 @@ class MovieDetail extends React.Component {
     };
   }
   componentDidMount() {
+	document.getElementsByClassName('footer')[0].style.position = 'fixed'
     const { id } = this.props.match.params
     Api.getMovieById(id).then(res => res.json()).then(result => {
       this.setState({ movie: result })

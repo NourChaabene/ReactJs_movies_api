@@ -1,40 +1,17 @@
 
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
- 
-const styles = theme => ({
-  root: {
-    ...theme.mixins.gutters(),
-    paddingBottom: theme.spacing.unit * 2,
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    
-  }
-});
- 
-function Footer(props) {
-  const { classes } = props;
- 
+import { Paper, Typography } from '@material-ui/core';
+import './footer.css'
+
+export default function Footer(props) {
   return (
-    <footer className={classes.footer}>
-      <Paper className={classes.root} elevation={3}>
-        <Typography variant="h5" component="h3">
-          React App with Material UI
-        </Typography>
-        <Typography component="p">
-          @2018 All right reserved
-        </Typography>
-      </Paper>
-    </footer>
+    <Paper className="footer">
+      <Typography component="h6">
+        Nobo ©
+          </Typography>
+      <Typography component="p">
+        All right reserved
+          </Typography>
+    </Paper>
   );
 }
- 
-Footer.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
- 
-export default withStyles(styles)(Footer);
